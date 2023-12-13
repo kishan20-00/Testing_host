@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --blue: #43BAE9;
+    --green: #BBD92A;
+}
+
+body {
+    font-size: 18px !important;
+}
+
+.custom-container {
+    width: 80% !important;
+}
+
+.custom-line-height {
+    line-height: .25rem !important;
+}
+
+.custom-shape-divider-top-1668835711,
+.custom-shape-divider-top-1668836727 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    transform: rotateX(180deg);
+    overflow: hidden;
+}
+
+.custom-shape-divider-top-1668835711 {
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1668836727 {
+    z-index: -2;
+}
+
+.custom-shape-divider-top-1668835711 svg,
+.custom-shape-divider-top-1668836727 svg {
+    position: relative;
+    display: block;
+    width: calc(153% + 1.3px);
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1668835711 svg {
+    height: 172px;
+}
+
+.custom-shape-divider-top-1668836727 svg {
+    height: 185px;
+}
+
+.custom-shape-divider-top-1668835711 .shape-fill {
+    fill: var(--blue);
+}
+
+.custom-shape-divider-top-1668836727 .shape-fill {
+    fill: var(--green);
+}
+
+.green-shadow {
+    box-shadow: 8px 8px 0px 0px var(--green);
+}
+
+.skip-link {
+    margin-right: 1rem;
+    position: absolute;
+    transform: translateX(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus {
+    position: static;
+    transform: translateX(0);
+}
+
+@media screen and (max-device-width: 400px) {
+    .custom-shape-divider-top-1668835711 svg {
+        height: 120px;
+    }
+
+    .custom-shape-divider-top-1668836727 svg {
+        height: 133px;
+    }
+}
